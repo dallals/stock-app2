@@ -34,16 +34,24 @@ class User < ActiveRecord::Base
   end
 
   def self.search(param)
-    return User.none if param.blank?
-
+    return User.all if param.blank?
     param.strip!
     param.downcase!
+    # (email_matches(param) + first_name_matches(param) + last_name_matches(param)).uniq
     email_matches(param).uniq
   end
 
   def self.email_matches(param)
     matches('email', param)
   end
+
+  # def self.first_name_matches(param)
+  #   matches('first_name', param)
+  # end
+
+  # def self.last_name_matches(param)
+  #   matches('last_name', param)
+  # end  
   
 
   def self.matches(field_name, param)

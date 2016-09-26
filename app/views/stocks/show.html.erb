@@ -40,159 +40,164 @@
 
 
 
+<div class="row">
+  <div class="col-md-3 col-sm-12">
+    <div id="tv-miniwidget-b3de6"></div>
 
-<div id="tv-miniwidget-b3de6"></div>
-
-<script type="text/javascript">
-new TradingView.MiniWidget({
-  "container_id": "tv-miniwidget-b3de6",
-  "tabs": [
-    "Equities",
-    "Commodities",
-    "Bonds",
-    "Forex"
-  ],
-  "symbols": {
-    "Equities": [
-      [
-        "S&P500",
-        "SPX500"
+    <script type="text/javascript">
+    new TradingView.MiniWidget({
+      "container_id": "tv-miniwidget-b3de6",
+      "tabs": [
+        "Equities",
+        "Commodities",
+        "Bonds",
+        "Forex"
       ],
-      [
-        "NQ100",
-        "NAS100"
-      ],
-      [
-        "Dow30",
-        "DOWI"
-      ],
-      [
-        "Nikkei225",
-        "JPN225"
-      ],
-      [
-        "Apple",
-        "AAPL "
-      ],
-      [
-        "Google",
-        "GOOG"
-      ]
-    ],
-    "Commodities": [
-      [
-        "Emini",
-        "ES1!"
-      ],
-      [
-        "Euro",
-        "E61!"
-      ],
-      [
-        "Gold",
-        "GC1!"
-      ],
-      [
-        "Oil",
-        "CL1!"
-      ],
-      [
-        "Gas",
-        "NG1!"
-      ],
-      [
-        "Corn",
-        "ZC1!"
-      ]
-    ],
-    "Bonds": [
-      [
-        "Eurodollar",
-        "CME:GE1!"
-      ],
-      [
-        "T-Bond",
-        "CBOT:ZB1!"
-      ],
-      [
-        "Ultra T-Bond",
-        "CBOT:UD1!"
-      ],
-      [
-        "Euro Bund",
-        "FX:BUND"
-      ],
-      [
-        "Euro BTP",
-        "EUREX:II1!"
-      ],
-      [
-        "Euro BOBL",
-        "EUREX:HR1!"
-      ]
-    ],
-    "Forex": [
-      "FX:EURUSD",
-      "FX:GBPUSD",
-      "FX:USDJPY",
-      "FX:USDCHF",
-      "FX:AUDUSD",
-      "FX:USDCAD"
-    ]
-  },
-  "gridLineColor": "#E9E9EA",
-  "fontColor": "#83888D",
-  "underLineColor": "#dbeffb",
-  "trendLineColor": "#4bafe9",
-  "activeTickerBackgroundColor": "#EDF0F3",
-  "large_chart_url": "https://www.tradingview.com/chart/",
-  "noGraph": false,
-  "width": 300,
-  "height": 400,
-  "locale": "en"
-});
-</script>
+      "symbols": {
+        "Equities": [
+          [
+            "S&P500",
+            "SPX500"
+          ],
+          [
+            "NQ100",
+            "NAS100"
+          ],
+          [
+            "Dow30",
+            "DOWI"
+          ],
+          [
+            "Nikkei225",
+            "JPN225"
+          ],
+          [
+            "Apple",
+            "AAPL "
+          ],
+          [
+            "Google",
+            "GOOG"
+          ]
+        ],
+        "Commodities": [
+          [
+            "Emini",
+            "ES1!"
+          ],
+          [
+            "Euro",
+            "E61!"
+          ],
+          [
+            "Gold",
+            "GC1!"
+          ],
+          [
+            "Oil",
+            "CL1!"
+          ],
+          [
+            "Gas",
+            "NG1!"
+          ],
+          [
+            "Corn",
+            "ZC1!"
+          ]
+        ],
+        "Bonds": [
+          [
+            "Eurodollar",
+            "CME:GE1!"
+          ],
+          [
+            "T-Bond",
+            "CBOT:ZB1!"
+          ],
+          [
+            "Ultra T-Bond",
+            "CBOT:UD1!"
+          ],
+          [
+            "Euro Bund",
+            "FX:BUND"
+          ],
+          [
+            "Euro BTP",
+            "EUREX:II1!"
+          ],
+          [
+            "Euro BOBL",
+            "EUREX:HR1!"
+          ]
+        ],
+        "Forex": [
+          "FX:EURUSD",
+          "FX:GBPUSD",
+          "FX:USDJPY",
+          "FX:USDCHF",
+          "FX:AUDUSD",
+          "FX:USDCAD"
+        ]
+      },
+      "gridLineColor": "#E9E9EA",
+      "fontColor": "#83888D",
+      "underLineColor": "#dbeffb",
+      "trendLineColor": "#4bafe9",
+      "activeTickerBackgroundColor": "#EDF0F3",
+      "large_chart_url": "https://www.tradingview.com/chart/",
+      "noGraph": false,
+      "width": 300,
+      "height": 400,
+      "locale": "en"
+    });
+    </script>
+    </div>
 <!-- TradingView Widget END --> 
 
 <!-- TradingView Widget BEGIN -->
-<div id="tv-medium-widget-b96d9" style="margin-left: 310px; margin-top: -400px">
 
-<!-- TradingView Widget BEGIN -->
-<div id="tv-medium-widget-fe3fe"></div>
-<script type="text/javascript">
-var stock = '<%= @stock.ticker %>'
-var stock_name = '<%= @stock.name %>'
-new TradingView.MediumWidget({
-  "container_id": "tv-medium-widget-fe3fe",
-  "symbols": [
-    [
-      stock_name,
-      stock
-    ],
-    [
-      "Apple",
-      "AAPL "
-    ],
-    [
-      "Google",
-      "GOOGL"
-    ],
-    [
-      "Facebook",
-      "FB"
-    ]
-  ],
-  "gridLineColor": "#E9E9EA",
-  "fontColor": "#83888D",
-  "underLineColor": "#dbeffb",
-  "trendLineColor": "#4bafe9",
-  "width": "770px",
-  "height": "400px",
-  "tradeItWidget": true,
-  "locale": "en"
-});
-</script>
-<!-- TradingView Widget END -->
+    <div id="tv-medium-widget-b96d9" style="margin-left: 310px; margin-top: -400px">
+    <!-- TradingView Widget BEGIN -->
+  <div class="col-md-9 col-sm-12 col-lg-9">  
+    <div id="tv-medium-widget-fe3fe"></div>
+    <script type="text/javascript">
+    var stock = '<%= @stock.ticker %>'
+    var stock_name = '<%= @stock.name %>'
+    new TradingView.MediumWidget({
+      "container_id": "tv-medium-widget-fe3fe",
+      "symbols": [
+        [
+          stock_name,
+          stock
+        ],
+        [
+          "Apple",
+          "AAPL "
+        ],
+        [
+          "Google",
+          "GOOGL"
+        ],
+        [
+          "Facebook",
+          "FB"
+        ]
+      ],
+      "gridLineColor": "#E9E9EA",
+      "fontColor": "#83888D",
+      "underLineColor": "#dbeffb",
+      "trendLineColor": "#4bafe9",
+      "width": "770px",
+      "height": "400px",
+      "tradeItWidget": true,
+      "locale": "en"
+    });
+    </script>
+  </div>  
+    <!-- TradingView Widget END -->
 
 
+    </div>
 </div>
